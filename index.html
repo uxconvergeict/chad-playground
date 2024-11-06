@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converge Navbar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-logo img {
+            height: 24px;
+            margin-right: 10px;
+        }
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 400;
+        }
+        .navbar-links .active {
+            color: #006400;
+            font-weight: 600;
+        }
+        .navbar-icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar-icons .icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            background-size: cover;
+            cursor: pointer;
+        }
+        .navbar-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-login {
+            color: #006400;
+            border: 1px solid #006400;
+        }
+        .btn-subscribe {
+            color: #fff;
+            background-color: #006400;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="logo.png" alt="Converge Logo">
+            <span>CONVERGE</span>
+        </div>
+        <div class="navbar-links">
+            <a href="#products">Products</a>
+            <a href="#shop">Shop</a>
+            <a href="#corporate" class="active">Corporate</a>
+            <a href="#support">Support</a>
+        </div>
+        <div class="navbar-icons">
+            <div class="icon" style="background-image: url('search-icon.png');"></div>
+            <div class="icon" style="background-image: url('cart-icon.png');"></div>
+        </div>
+        <div class="navbar-buttons">
+            <a href="#login" class="btn btn-login">Login</a>
+            <a href="#subscribe" class="btn btn-subscribe">Subscribe now</a>
+        </div>
+    </nav>
+</body>
+</html>
